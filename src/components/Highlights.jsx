@@ -2,8 +2,7 @@ import { Element } from "react-scroll";
 import { useState } from "react";
 import { aiTestingText } from '../data/Data.js';
 import clsx from "clsx";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
+import { useSpring, animated } from 'react-spring';
 
 const HighlightsItem = ({ item, index }) => {
   const [activeId, setActiveId] = useState(null);
@@ -12,6 +11,12 @@ const HighlightsItem = ({ item, index }) => {
   const handleToggle = () => {
     setActiveId(activeId === item.id ? null : item.id);
   };
+
+  const slideProps = useSpring({
+    opacity: active ? 1 : 0,
+    height: active ? 'auto' : '0px',
+    overflow: 'hidden',
+  });
 
   return (
     <div className="relative z-2 mb-4 cursor-pointer" onClick={handleToggle}>
@@ -39,7 +44,7 @@ const HighlightsItem = ({ item, index }) => {
         </div>
       </div>
 
-      <SlideDown>
+      <animated.div style={slideProps}>
         {activeId === item.id && (
           <div className="body-3 px-7 py-3.5">
             <ul className="list-disc list-inside pl-5">
@@ -51,7 +56,7 @@ const HighlightsItem = ({ item, index }) => {
             </ul>
           </div>
         )}
-      </SlideDown>
+      </animated.div>
 
       <div
         className={clsx(
