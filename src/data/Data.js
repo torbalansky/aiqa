@@ -25,6 +25,7 @@ import octologo from "../../public/images/logos/octologo.png";
 import octoimg from "../../public/images/octoimg.jpg";
 import zeroimg from "../../public/images/zeroimg.png";
 import zerologo from "../../public/images/logos/zerologo.png";
+import testcraftimg from "../../public/images/testcraft.png";
 
 export const recommendationAItools = [
     {
@@ -1988,6 +1989,69 @@ tools: [
         },
         "url": "https://zerostep.com/"
     },
+    {
+        "id": "testcraft",
+        "name": "TestCraft",
+        "category": "Test Automation",
+        "image": testcraftimg,
+        "description": "TestCraft is a free and open-source AI-powered browser extension designed to assist in software testing. It generates test ideas and ready-to-run test scripts for popular automation frameworks in your preferred programming language.",
+        "lastUpdated": "2024-08-18",
+        "logo": "https://home.testcraft.app/assets/testcraft-logo.png",
+        "prosAndCons": {
+            "pros": [
+                "AI-Powered Test Generation: Assists testers by using AI to generate test ideas, ensuring comprehensive test coverage.",
+                "Codeless Automation: Automatically generates automation scripts, eliminating the need for manual coding.",
+                "Accessibility Testing: Identifies potential accessibility issues and provides effective testing suggestions."
+            ],
+            "cons": [
+                "Limited Platform Support: Primarily focused on web applications; may not support mobile app testing.",
+                "Initial Setup Complexity: May require significant effort to set up and configure initially.",
+                "Limited Customization: Visual test creation may be limiting for advanced users seeking deeper customization."
+            ]
+        },
+        "aiFeatures": {
+            "autonomousTestScriptGeneration": "Utilizes AI to generate test scripts automatically based on user-defined scenarios.",
+            "selfHealingCapabilities": "Employs AI and machine learning to detect and adapt to changes in the application under test, reducing maintenance efforts.",
+            "multilingualTesting": "Supports testing in multiple programming languages, catering to diverse development environments."
+        },
+        "testTypesSupported": {
+            "uiUxTesting": "Automates user interface and experience testing to ensure application usability.",
+            "functionalTesting": "Validates that application features function as intended.",
+            "accessibilityTesting": "Identifies and addresses accessibility issues to ensure compliance and inclusivity."
+        },
+        "learningCurve": {
+            "description": "TestCraft offers a user-friendly, codeless interface with a drag-and-drop feature, enabling testers without programming knowledge to create and execute automated tests efficiently.",
+            "resources": ["Official Documentation", "Community Forums"]
+        },
+        "compatibility": {
+            "browsers": "Compatible with major browsers, leveraging Selenium for test automation.",
+            "operatingSystems": ["Windows", "macOS", "Linux"],
+            "applicationTypes": "Designed primarily for web applications."
+        },
+        "integrations": {
+            "ciCdTools": ["Jenkins", "Azure DevOps"],
+            "cloudPlatforms": ["AWS", "Azure", "Google Cloud"],
+            "devOpsTools": ["Jira", "Selenium"]
+        },
+        "userRatingsAndReviews": {
+            "summary": "Users appreciate TestCraft's codeless approach and AI-driven features, noting its efficiency in creating and maintaining automated tests. Some users highlight the need for improved user and test case management features.",
+            "testimonials": [
+                "TestCraft has revolutionized our testing process with its codeless automation and AI capabilities.",
+                "The integration with our existing tools was seamless, and the support team is highly responsive."
+            ]
+        },
+        "customerSupport": {
+            "availability": "24/7",
+            "channels": ["Documentation", "Email", "Live Online Assistance", "Community Forums"],
+            "premiumSupport": "Dedicated support available for enterprise users."
+        },
+        "pricing": {
+            "model": "Open-source",
+            "factors": ["Additional features", "Enterprise support"],
+            "additionalDetails": "Free to use with optional paid features and support packages."
+        },
+        "url": "https://home.testcraft.app/"
+    }    
     
 ] 
 }
