@@ -21,7 +21,10 @@ import appliToolsLogo from "../../public/images/logos/applitools.png";
 import appvanceLogo from "../../public/images/logos/appvance.png";
 import tonicLogo from "../../public/images/logos/tonic.png";
 import usabilityHubLogo from "../../public/images/logos/usabilityhub.png";
-
+import octologo from "../../public/images/logos/octologo.png";
+import octoimg from "../../public/images/octoimg.jpg";
+import zeroimg from "../../public/images/zeroimg.png";
+import zerologo from "../../public/images/logos/zerologo.png";
 
 export const recommendationAItools = [
     {
@@ -301,21 +304,23 @@ export const aiTestingPlatforms = {
             logo: datadogLogo,
         },
         {
-            id: "blinqio",
-            name: "BlinqIO",
-            description: "AI-driven test automation tool designed to emulate the functions of a human test automation engineer. It interprets test scenarios or descriptions, executes them on the target application or website, and generates automation code for integration into CI/CD systems.",
-            url: "https://blinq.io/",
-            pricing: "Freemium",
-            category: "AI-Powered Testing",
-            keyFeatures: [
+            "id": "blinqio",
+            "name": "BlinqIO",
+            "description": "AI-driven test automation tool designed to emulate the functions of a human test automation engineer. It interprets test scenarios or descriptions, executes them on the target application or website, and generates automation code for integration into CI/CD systems. BlinqIO leverages Playwright as its core automation framework, ensuring robust and scalable test execution.",
+            "url": "https://blinq.io/",
+            "pricing": "Freemium",
+            "category": "AI-Powered Testing",
+            "keyFeatures": [
                 "Test scenario interpretation",
-                "Automated code generation",
+                "Automated Playwright-based code generation",
                 "CI/CD integration",
-                "Human-like testing behavior"
+                "Human-like testing behavior",
+                "Seamless Playwright test execution"
             ],
-            image: "https://blinq.io/wp-content/uploads/2024/03/blinq-logo-1.png",
-            logo: blinqLogo
+            "image": "https://blinq.io/wp-content/uploads/2024/03/blinq-logo-1.png",
+            "logo": blinqLogo
         },
+        
         {
             id: "autify",
             name: "Autify",
@@ -335,7 +340,7 @@ export const aiTestingPlatforms = {
         {
             id: "codeceptjs",
             name: "CodeceptJS",
-            description: "Innovative addition to the popular CodeceptJS test automation framework, introducing artificial intelligence capabilities to enhance the testing experience.",
+            description: "CodeceptJS AI is an innovative enhancement to the popular CodeceptJS test automation framework, introducing artificial intelligence capabilities to streamline the testing process and improve efficiency. It supports Playwright as one of its core automation engines, enabling robust and scalable browser testing.",
             url: "https://codecept.io/",
             pricing: "Open-source",
             category: "Framework Enhancements",
@@ -343,7 +348,8 @@ export const aiTestingPlatforms = {
                 "AI integration with existing frameworks",
                 "Flexible open-source testing",
                 "Enhanced error detection",
-                "Smart test case generation"
+                "Smart test case generation",
+                "Native Playwright support for browser automation"
             ],
             image: "https://codecept.io/wp-content/uploads/2024/03/codecept-logo-1.png",
             logo: codeceptLogo
@@ -716,7 +722,7 @@ export const aiTestingPlatforms = {
                 "Simplified test creation"
             ],
             image: "https://www.zerostep.com/wp-content/uploads/2024/03/zerostep-logo-1.png",
-            logo: "https://www.zerostep.com/wp-content/uploads/2024/03/zerostep-logo-1.png"
+            logo: zerologo
         },
         {
             id: "testgrid",
@@ -780,7 +786,7 @@ export const aiTestingPlatforms = {
                 "Test optimization"
             ],
             image: "https://octomind.dev/wp-content/uploads/2024/03/octomind-logo-1.png",
-            logo: "https://octomind.dev/wp-content/uploads/2024/03/octomind-logo-1.png"
+            logo: octologo
         },
         {
             id: "appvance",
@@ -1527,74 +1533,80 @@ tools: [
     },
 
     {
-        id: "blinqio",
-        name: "BlinqIO",
-        category: "Test Automation",
-        image: blinqioImg,
-        description: "BlinqIO is an AI-powered test automation tool designed to emulate the role of a human test automation engineer. It interprets test scenarios or descriptions, executes them on the target application or website, and generates automation code for integration into CI/CD systems.",
-        lastUpdated: "2024-12-30",
-        logo: "BlinqIO logo",
-        prosAndCons: {
-            pros: [
+        "id": "blinqio",
+        "name": "BlinqIO",
+        "category": "Test Automation",
+        "image": blinqioImg,
+        "description": "BlinqIO is an AI-powered test automation tool designed to emulate the role of a human test automation engineer. It interprets test scenarios or descriptions, executes them on the target application or website, and generates automation code for integration into CI/CD systems. BlinqIO leverages Playwright as its core automation framework, ensuring robust and scalable test execution.",
+        "lastUpdated": "2024-12-30",
+        "logo": blinqLogo,
+        "prosAndCons": {
+            "pros": [
                 "Substantially reduces the costs associated with manual testing.",
                 "Speeds up the testing process, facilitating faster time-to-market for products.",
                 "Ensures reliability and performance through continuous and automated testing.",
                 "Seamlessly integrates into existing workflows, boosting team productivity.",
                 "Automates test creation and execution, minimizing manual effort.",
                 "Operates 24/7, ensuring consistent and thorough testing.",
-                "Self-healing capabilities adapt to UI changes automatically."
+                "Self-healing capabilities adapt to UI changes automatically.",
+                "Full Playwright support for automated test execution."
             ],
-            cons: [
+            "cons": [
                 "Customizing the platform to meet specific needs may require considerable setup effort.",
                 "Teams unfamiliar with AI-driven testing may face a learning curve.",
                 "Organizations may hesitate to fully trust AI for critical testing tasks.",
                 "Resolving complex issues may depend on BlinqIO's support team.",
-                "Manual oversight may still be necessary for highly specialized testing scenarios."
+                "Manual oversight may still be necessary for highly specialized testing scenarios.",
+                "Currently optimized for Playwright, which may not suit teams using other frameworks."
             ]
         },
-        aiFeatures: {
-            autonomousTestScriptGeneration: "Automatically generates and executes test scripts, identifying and debugging issues without human input.",
-            selfHealingCapabilities: "Detects UI changes and adjusts test scripts to remain aligned with application updates.",
-            multilingualTesting: "Supports testing in over 50 languages, catering to global applications."
+        "aiFeatures": {
+            "autonomousTestScriptGeneration": "Automatically generates and executes test scripts, identifying and debugging issues without human input. Uses Playwright to create robust and scalable test cases.",
+            "selfHealingCapabilities": "Detects UI changes and adjusts test scripts to remain aligned with application updates.",
+            "multilingualTesting": "Supports testing in over 50 languages, catering to global applications."
         },
-        testTypesSupported: {
-            uiUxTesting: "Automates user interface and experience testing to ensure application usability.",
-            functionalTesting: "Validates that application features function as intended.",
-            regressionTesting: "Ensures that new code changes do not negatively impact existing functionalities."
+        "testTypesSupported": {
+            "uiUxTesting": "Automates user interface and experience testing to ensure application usability.",
+            "functionalTesting": "Validates that application features function as intended.",
+            "regressionTesting": "Ensures that new code changes do not negatively impact existing functionalities.",
+            "endToEndTesting": "Utilizes Playwright to test complete user journeys across different browsers and environments."
         },
-        learningCurve: {
-            description: "BlinqIO offers an AI Recorder that captures test steps as users perform them, generating automation code and high-level business descriptions. This simplifies the learning process, allowing users to create tests without extensive programming knowledge.",
-            resources: ["Free Udemy Course", "Documentation"]
+        "learningCurve": {
+            "description": "BlinqIO offers an AI Recorder that captures test steps as users perform them, generating automation code and high-level business descriptions. This simplifies the learning process, allowing users to create tests without extensive programming knowledge. Additionally, it provides built-in Playwright support, reducing the effort required for browser automation.",
+            "resources": ["Free Udemy Course", "Documentation", "Playwright Integration Guide"]
         },
-        compatibility: {
-            browsers: "Compatible with major browsers, leveraging Playwright for test automation.",
-            operatingSystems: ["Windows", "macOS", "Linux"],
-            applicationTypes: "Designed for web applications and adaptable to different front-end technologies."
+        "compatibility": {
+            "browsers": "Compatible with major browsers, leveraging Playwright for test automation.",
+            "operatingSystems": ["Windows", "macOS", "Linux"],
+            "applicationTypes": "Designed for web applications and adaptable to different front-end technologies."
         },
-        integrations: {
-            ciCdTools: ["Jenkins", "GitLab"],
-            cloudPlatforms: ["AWS", "Azure", "Google Cloud"],
-            devOpsTools: ["Jira"]
+        "integrations": {
+            "ciCdTools": ["Jenkins", "GitLab"],
+            "cloudPlatforms": ["AWS", "Azure", "Google Cloud"],
+            "devOpsTools": ["Jira"],
+            "playwrightIntegration": "BlinqIO is built with Playwright as its core automation framework, ensuring smooth execution and integration. It automatically generates Playwright-based test scripts for streamlined test automation."
         },
-        userRatingsAndReviews: {
-            summary: "User feedback is limited, but available testimonials are positive.",
-            testimonials: [
+        "userRatingsAndReviews": {
+            "summary": "User feedback is limited, but available testimonials are positive. BlinqIO's deep Playwright integration is particularly praised for its reliability and efficiency.",
+            "testimonials": [
                 "A RedHat Test Automation Engineer reported a tenfold increase in test creation efficiency.",
-                "A Vodafone Test Automation Team Leader praised BlinqIO for its ease of use and smooth integration into team processes."
+                "A Vodafone Test Automation Team Leader praised BlinqIO for its ease of use and smooth integration into team processes.",
+                "BlinqIO's Playwright-based automation has significantly improved our ability to scale test coverage across multiple browsers." 
             ]
         },
-        customerSupport: {
-            availability: "24/7",
-            channels: ["Documentation", "Phone", "Email", "Live Online Assistance"],
-            premiumSupport: "Free Udemy course available to become a BlinqIO AI Test Engineer."
+        "customerSupport": {
+            "availability": "24/7",
+            "channels": ["Documentation", "Phone", "Email", "Live Online Assistance"],
+            "premiumSupport": "Free Udemy course available to become a BlinqIO AI Test Engineer. Dedicated Playwright support available for enterprise users."
         },
-        pricing: {
-            model: "Subscription-based",
-            factors: ["Number of tests", "Features utilized"],
-            additionalDetails: "14-day free trial available. Pricing varies for Starter, Pro, and Enterprise plans."
+        "pricing": {
+            "model": "Subscription-based",
+            "factors": ["Number of tests", "Features utilized"],
+            "additionalDetails": "14-day free trial available. Pricing varies for Starter, Pro, and Enterprise plans. Additional enterprise support available for Playwright-based implementations."
         },
-        url: "https://www.blinq.io/"
-    },    
+        "url": "https://www.blinq.io/"
+    },
+
 
         {
             id: "aqua",
@@ -1724,75 +1736,69 @@ tools: [
             },
             url: "https://autify.com/"
         },
-    
-    
-    
-    {
-        id: "codeceptjs",
-        name: "CodeceptJS",
-        description:"CodeceptJS AI is an innovative enhancement to the popular CodeceptJS test automation framework, introducing artificial intelligence capabilities to streamline the testing process and improve efficiency.",
-        image: codeceptjsImg,
-        prosAndCons: {
-          pros: [
-            "Assists in writing test cases and generating page objects.",
-            "Self-heals failing tests, which can reduce maintenance efforts.",
-            "Integrates AI directly within the testing framework.",
-            "Supports multiple AI providers for greater flexibility.",
-          ],
-          cons: [
-            "AI features are experimental and may not always deliver optimal results.",
-            "Requires sending HTML content to AI providers, which may raise security concerns.",
-            "Currently limited to web-based testing with tools like Playwright and WebDriver.",
-            "May struggle with complex, dynamic single-page applications.",
-          ],
+        {
+            "id": "codeceptjs",
+            "name": "CodeceptJS",
+            "description": "CodeceptJS AI is an innovative enhancement to the popular CodeceptJS test automation framework, introducing artificial intelligence capabilities to streamline the testing process and improve efficiency. It supports Playwright as one of its core automation engines, enabling robust and scalable browser testing.",
+            "image": codeceptjsImg,
+            "prosAndCons": {
+              "pros": [
+                "Assists in writing test cases and generating page objects.",
+                "Self-heals failing tests, which can reduce maintenance efforts.",
+                "Integrates AI directly within the testing framework.",
+                "Supports multiple AI providers for greater flexibility.",
+                "Leverages Playwright for reliable browser automation and cross-browser testing."
+              ],
+              "cons": [
+                "AI features are experimental and may not always deliver optimal results.",
+                "Requires sending HTML content to AI providers, which may raise security concerns.",
+                "Currently limited to web-based testing with tools like Playwright and WebDriver.",
+                "May struggle with complex, dynamic single-page applications.",
+                "Playwright dependency may not align with teams using alternative automation frameworks."
+              ]
+            },
+            "aiFeatures": {
+              "testWritingAssistance": "Assists in writing test cases while using the pause() function or in interactive shell mode.",
+              "pageObjectGeneration": "Automatically generates page objects in pause() or interactive shell mode.",
+              "selfHealingTests": "Attempts to automatically resolve failing tests, which is particularly useful in continuous integration (CI) environments.",
+              "customAiPrompts": "Enables the sending of custom prompts to the AI provider, including attaching HTML content from the tested page."
+            },
+            "testTypesSupported": {
+              "functionalTests": "Supports functional testing for various features and functionality.",
+              "e2eTests": "Facilitates end-to-end testing to validate complete workflows, leveraging Playwright for comprehensive browser automation.",
+              "uiTests": "Provides tools for comprehensive user interface testing."
+            },
+            "learningCurve": {
+              "description": "The learning curve varies based on the user's experience with CodeceptJS and test automation. Existing users may find integrating AI features straightforward, while new users will need to learn both the fundamentals of CodeceptJS and the specific AI-related functionalities. Playwright users will find a familiar environment for test execution.",
+              "resources": ["Official Documentation", "Community Forums", "Playwright Integration Guide"]
+            },
+            "compatibility": {
+              "browsers": "Compatible with major browsers supported by Playwright and WebDriver.",
+              "operatingSystems": ["Windows", "macOS", "Linux"],
+              "applicationTypes": "Primarily focused on web applications, with potential limitations for complex single-page applications or highly dynamic content. Fully supports Playwright for modern browser automation."
+            },
+            "integrations": {
+              "ciCdTools": ["GitHub Actions", "Jenkins"],
+              "cloudPlatforms": ["AWS", "Azure"],
+              "devOpsTools": ["Docker", "Kubernetes"],
+              "playwrightIntegration": "CodeceptJS supports Playwright as a primary test automation engine, enabling powerful browser automation and cross-browser testing capabilities."
+            },
+            "userRatingsAndReviews": {
+              "summary": "Comprehensive user ratings are currently limited due to the experimental nature of the AI features. The initial reception within the CodeceptJS community has been positive, particularly for its Playwright integration, but more feedback is needed for a thorough evaluation."
+            },
+            "customerSupport": {
+              "availability": "Community-driven support with limited official channels.",
+              "channels": ["GitHub Issues", "Forums", "Documentation"],
+              "premiumSupport": "None"
+            },
+            "pricing": {
+              "model": "Open Source",
+              "factors": ["API usage fees for AI providers"],
+              "additionalDetails": "Free framework; additional costs depend on AI provider usage. Playwright integration remains free as part of the core framework."
+            },
+            "url": "https://codecept.io/"
         },
-        aiFeatures: {
-          testWritingAssistance:
-            "Assists in writing test cases while using the pause() function or in interactive shell mode.",
-          pageObjectGeneration:
-            "Automatically generates page objects in pause() or interactive shell mode.",
-          selfHealingTests:
-            "Attempts to automatically resolve failing tests, which is particularly useful in continuous integration (CI) environments.",
-          customAiPrompts:
-            "Enables the sending of custom prompts to the AI provider, including attaching HTML content from the tested page.",
-        },
-        testTypesSupported: {
-          functionalTests: "Supports functional testing for various features and functionality.",
-          e2eTests: "Facilitates end-to-end testing to validate complete workflows.",
-          uiTests: "Provides tools for comprehensive user interface testing.",
-        },
-        learningCurve: {
-          description:
-            "The learning curve varies based on the user's experience with CodeceptJS and test automation. Existing users may find integrating AI features straightforward, while new users will need to learn both the fundamentals of CodeceptJS and the specific AI-related functionalities.",
-          resources: [],
-        },
-        compatibility: {
-          browsers: "Compatible with major browsers supported by Playwright and WebDriver.",
-          operatingSystems: ["Windows", "macOS", "Linux"],
-          applicationTypes: "Primarily focused on web applications, with potential limitations for complex single-page applications or highly dynamic content.",
-        },
-        integrations: {
-          ciCdTools: ["GitHub Actions", "Jenkins"],
-          cloudPlatforms: ["AWS", "Azure"],
-          devOpsTools: ["Docker", "Kubernetes"],
-        },
-        userRatingsAndReviews: {
-          summary:
-            "Comprehensive user ratings are currently limited due to the experimental nature of the AI features. The initial reception within the CodeceptJS community has been positive, but more feedback is needed for a thorough evaluation.",
-        },
-        customerSupport: {
-          availability: "Community-driven support with limited official channels.",
-          channels: ["GitHub Issues", "Forums", "Documentation"],
-          premiumSupport: "None",
-        },
-        pricing: {
-          model: "Open Source",
-          factors: ["API usage fees for AI providers"],
-          additionalDetails: "Free framework; additional costs depend on AI provider usage.",
-        },
-        url: "https://codecept.io/",
-      },
-
+        
       {
         id: "qaautomater",
         name: "QAautoMATER",
@@ -1856,7 +1862,132 @@ tools: [
         },
         url: "https://qaautomater.com/",
       },
+
+      {
+        "id": "octomind",
+        "name": "Octomind",
+        "category": "Test Automation Tools",
+        "image": octoimg,
+        "description": "AI-powered test automation tool designed for end-to-end testing of web applications. It uses AI agents to automatically discover and generate Playwright test cases.",
+        "lastUpdated": "2025-02-19",
+        "logo": octologo,
+        "prosAndCons": {
+            "pros": [
+                "AI-Powered Testing: Utilizes AI to discover, generate, and run end-to-end tests, enhancing efficiency and effectiveness.",
+                "Fast Execution: Tests are run in parallel, allowing even large test suites to complete in under 20 minutes.",
+                "Seamless Integration: Integrates smoothly with CI/CD tools like GitHub, Azure, and Jenkins.",
+                "Flexibility: Users can maintain their existing stack and codebase, avoiding the need to learn new technologies.",
+                "No Vendor Lock-in: Uses open-source Playwright code, which is fully portable."
+            ],
+            "cons": [
+                "AI Dependency: The tool's reliability may depend on the robustness of its AI models, which could be a potential point of failure.",
+                "Web App Limitation: Currently focused on web applications only.",
+                "Reliance on Playwright: Might not suit all teams, especially those heavily invested in other testing frameworks."
+            ]
+        },
+        "aiFeatures": {
+            "autonomousTestScriptGeneration": "AI agents analyze the web app to automatically discover critical flows and generate corresponding Playwright test cases.",
+            "selfHealingCapabilities": "Auto-maintenance feature adapts test code to app changes automatically, reducing the need for manual updates.",
+            "multilingualTesting": "Supported"
+        },
+        "testTypesSupported": {
+            "uiUxTesting": "Primarily focuses on end-to-end (E2E) testing using the Playwright framework, involving testing complete user journeys across different browsers and environments."
+        },
+        "learningCurve": {
+            "description": "Designed to be user-friendly with minimal setup, offering quick onboarding due to automated test discovery and generation.",
+            "resources": ["Extensive documentation and guides on their website.", "Access to a community via GitHub and Discord."]
+        },
+        "compatibility": {
+            "browsers": "Supports all major browsers (e.g., Chrome, Firefox, Safari) that are compatible with Playwright.",
+            "operatingSystems": ["Windows", "Linux", "macOS"],
+            "applicationTypes": "Primarily focused on web applications but can be adapted to various app types through Playwright."
+        },
+        "integrations": {
+            "ciCdTools": ["GitHub Actions", "Azure DevOps", "Jenkins"],
+            "cloudPlatforms": ["Vercel", "AWS", "Google Cloud"],
+            "devOpsTools": ["Slack"]
+        },
+        "userRatingsAndReviews": {
+            "summary": "Users appreciate Octomind for its speed, ease of use, and AI-driven features, noting its ability to quickly identify bugs and integrate seamlessly with existing workflows. However, reliance on Playwright might be a limitation for teams using other frameworks.",
+            "testimonials": [
+                "With Octomind it’s like having two more people on my team providing quality test cases. Octomind easily outperforms any other tools we’ve tried.",
+                "I love how quickly Octomind evolves and improves. It saves QA time and directs us right to the bugs with AI-generated executable test cases."
+            ]
+        },
+        "customerSupport": {
+            "availability": "Offers extensive documentation and guides, access to a community via GitHub and Discord, and personalized demos and support requests for tailored assistance.",
+            "channels": ["Documentation", "GitHub", "Discord", "Email"],
+            "premiumSupport": "Available in Pro and Enterprise plans."
+        },
+        "pricing": {
+            "model": "Tiered pricing model.",
+            "factors": ["Number of users", "Required AI functionality"],
+            "additionalDetails": "Free Plan: Includes unlimited users and self-service onboarding with limited AI functionality. Pro Plan: Priced at $299/month, offering advanced integrations and full AI functionality with support within one business day. Enterprise Plan: Custom pricing, offering full AI functionality and custom integrations with priority support."
+        },
+        "url": "https://octomind.dev"
+    },
     
+    {
+        "id": "zerostep",
+        "name": "ZeroStep",
+        "category": "Test Automation Tools",
+        "image": zeroimg,
+        "description": "Supercharge your Playwright tests with AI. ZeroStep's ai() function unlocks the power of GPT-3.5 and GPT-4 to make Playwright tests simpler and more resilient to change.",
+        "lastUpdated": "2025-02-19",
+        "logo": zerologo,
+        "prosAndCons": {
+            "pros": [
+                "AI-Powered Automation: Utilizes GPT-3.5 and GPT-4 to interpret and execute plain-text instructions, streamlining complex test scenarios without extensive coding.",
+                "Resilience to UI Changes: Reduces dependency on specific markup details, enhancing test robustness against minor UI changes.",
+                "Seamless Integration: Integrates directly into Playwright, allowing incorporation of AI into existing tests without changing the development workflow."
+            ],
+            "cons": [
+                "Chromium-Only Support: Currently, the ai() function supports execution only in Chromium browsers.",
+                "AI Dependency: The tool's effectiveness relies on the robustness of its AI models, which could be a potential point of failure.",
+                "Learning Curve: Users need to familiarize themselves with the ai() function and its integration into existing Playwright tests."
+            ]
+        },
+        "aiFeatures": {
+            "autonomousTestScriptGeneration": "Generates test scripts based on plain-text instructions, eliminating the need for traditional CSS selectors or XPath locators.",
+            "selfHealingCapabilities": "Automatically adapts to minor changes in the application's UI, reducing the need for manual test updates.",
+            "multilingualTesting": "Supported"
+        },
+        "testTypesSupported": {
+            "uiUxTesting": "Facilitates end-to-end testing by interpreting plain-text instructions to perform complex user interactions and assertions."
+        },
+        "learningCurve": {
+            "description": "Designed to simplify test creation by allowing the use of natural language instructions, making it accessible to both technical and non-technical team members.",
+            "resources": ["Comprehensive documentation available on their website.", "Community support through GitHub and Discord."]
+        },
+        "compatibility": {
+            "browsers": "Supports Chromium-based browsers.",
+            "operatingSystems": ["Windows", "Linux", "macOS"],
+            "applicationTypes": "Primarily focused on web applications."
+        },
+        "integrations": {
+            "ciCdTools": ["GitHub Actions", "GitLab"],
+            "cloudPlatforms": ["AWS", "Azure", "Google Cloud"],
+            "devOpsTools": ["Slack"]
+        },
+        "userRatingsAndReviews": {
+            "summary": "Users appreciate ZeroStep for its ability to simplify complex test scenarios through AI-driven plain-text instructions, leading to faster test creation and maintenance. However, reliance on AI models and Chromium-only support are noted limitations.",
+            "testimonials": [
+                "ZeroStep has transformed our testing process, allowing us to write complex tests with simple instructions.",
+                "The integration of AI into Playwright through ZeroStep has significantly reduced our test maintenance efforts."
+            ]
+        },
+        "customerSupport": {
+            "availability": "Offers extensive documentation and guides, with community support available through GitHub and Discord.",
+            "channels": ["Documentation", "GitHub", "Discord", "Email"],
+            "premiumSupport": "Not specified."
+        },
+        "pricing": {
+            "model": "Free tier with limited AI function calls; paid plans available for increased usage.",
+            "factors": ["Number of AI function calls", "Additional features"],
+            "additionalDetails": "Users receive 500 free ai() function calls per month; additional calls are available through paid plans starting at $20."
+        },
+        "url": "https://zerostep.com/"
+    },
     
 ] 
 }
